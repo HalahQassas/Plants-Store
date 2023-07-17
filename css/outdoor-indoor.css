@@ -1,0 +1,251 @@
+#header-img {
+    position: relative;
+    display: block;
+    margin-left: 39%;
+    margin-right: auto;
+    margin-top: 5%;
+    width: 30%;
+}
+
+#main-label {
+    position: absolute;
+    font-size: 2vw;
+    color: rgb(63, 61, 61);
+    top: 90%;
+    left: 34%;
+    transform: translate(-50%, -50%);
+}
+
+#icons {
+    margin-top: 1%;
+    display: flex;
+    width: 55%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.imgs {
+    width: 100%;
+}
+
+.iconscontainer {
+    position: relative;
+    cursor: pointer;
+    flex: 33.33%;
+    margin: 4%;
+}
+
+.icons:hover .iconscontainer {
+    visibility: hidden;
+}
+
+.hovering {
+    border-radius: 4vw;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 95%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #bbbdc5a4;
+}
+
+.iconscontainer:hover .hovering {
+    opacity: 1;
+}
+
+.section-name {
+    color: white;
+    font-weight: 1000;
+    font-size: 1.8vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.products-section {
+    margin-top: 5%;
+    display: flex;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.product {
+    position: relative;
+    width: 20%;
+    margin: auto;
+    cursor: pointer;
+}
+
+.description {
+    border-radius: 4.1vw;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #c9dfce80;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+}
+
+.description-indoor {
+    border-radius: 4.1vw;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #dfc9d280;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+}
+
+.product:hover .description {
+    height: 29vw;
+}
+
+.product:hover .description-indoor {
+    height: 29vw;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-left: 2vw;
+    margin-bottom: 3vw;
+    margin-top: 3vw;
+}
+
+th,
+td {
+    text-align: left;
+    padding: 8px;
+}
+
+.table {
+    align-items: center;
+}
+
+.display {
+    position: relative;
+    vertical-align: bottom;
+}
+
+.plant-name {
+    font-size: 1.7vw;
+    color: rgb(112, 144, 122);
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.plant-name-indoor {
+    font-size: 1.7vw;
+    color: rgb(144, 112, 127);
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.add-to-bag {
+    display: inline-block;
+    padding: 0.8em 3em;
+    border-radius: 2em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-size: 1.2vw !important;
+    color: black;
+    background-color: white;
+    text-align: center;
+    border: none;
+    margin-left: 3.3vw;
+}
+
+.add-to-bag:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.rec,
+.rec-indoor {
+    height: 29vw;
+    width: 100%;
+    background-color: #C9DFCE;
+    border-radius: 4.1vw;
+}
+
+.rec-indoor {
+    background-color: #d7c0c0;
+}
+
+.item-img {
+    display: block;
+    width: 90%;
+    height: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 7vw;
+    margin: auto;
+}
+
+.plant-price {
+    font-size: 1.4vw;
+    /* color: ; */
+    color: rgb(70, 109, 82);
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.plant-price-indoor {
+    font-size: 1.4vw;
+    /* color: ; */
+    color: rgb(109, 70, 85);
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.section-label {
+    margin-top: 10%;
+}
+
+.rec-header,
+.rec-header-outdoor {
+    height: 29vw;
+    width: 70%;
+    background-color: #d7c0c0;
+    border-radius: 4.1vw;
+}
+
+.rec-header-outdoor {
+    background-color: #C9DFCE;
+}
+
+.header-img {
+    display: block;
+    width: 80%;
+    height: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 5vw;
+    margin: auto;
+    margin-left: 14%;
+}

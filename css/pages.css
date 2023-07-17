@@ -1,0 +1,51 @@
+#outdoor-light-img {
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    width: 35%;
+    cursor: pointer;
+}
+
+#indoor-page-img {
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    width: 35%;
+    cursor: pointer;
+}
+
+#page-label {
+    position: absolute;
+    font-size: 2.3vw;
+    color: rgb(63, 61, 61);
+    top: 19vw;
+    left: 54%;
+    transform: translate(-50%, -50%);
+}
+
+#page-label-special {
+    position: absolute;
+    font-size: 2.13vw;
+    color: rgb(63, 61, 61);
+    top: 19vw;
+    left: 54%;
+    transform: translate(-50%, -50%);
+}
+
+#page-label-special2 {
+    position: absolute;
+    font-size: 1.9vw;
+    color: rgb(63, 61, 61);
+    top: 19vw;
+    left: 54%;
+    transform: translate(-50%, -50%);
+}
+
+.indoor-icons,
+.outdoor-icons {
+    margin: 0 10%;
+}

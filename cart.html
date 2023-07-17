@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Cart</title>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/homePage.css" rel="stylesheet">
+    <link href="css/cart.css" rel="stylesheet">
+    
+</head>
+
+<body>
+    <header>
+        <!-- nav bar -->
+        <nav>
+            <ul>
+                <li id="shop-name"><b>Green Garden</b></li>
+                <li style="float:right">
+                    <a href="Bag.html" id="cart-img"> <img src="img/shopping-cart.png" style="width: 3vw;"></a>
+                </li>
+                <li style="float:right" class="dropdown">
+                    <a href="indoor/indoor.html" class="dropbtn">Indoor</a>
+                    <div class="dropdown-content">
+                        <a href="indoor/room.html">Room</a>
+                        <a href="indoor/light.html">Lighting</a>
+                        <a href="indoor/size.html">Size</a>
+                        <a href="indoor/petsSafe.html">Pets safe</a>
+                        <a href="indoor/care.html">Care level</a>
+                    </div>
+                </li>
+                <li style="float:right" class="dropdown">
+                    <a href="outdoor/outdoor.html" class="dropbtn">Outdoor</a>
+                    <div class="dropdown-content">
+                        <a href="outdoor/Space.html">Space</a>
+                        <a href="outdoor/Light.html">Lighting</a>
+                        <a href="outdoor/size.html">Size</a>
+                        <a href="outdoor/petssafe.html">Pets safe</a>
+                        <a href="outdoor/careLevel.html">Care level</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        </nav>
+    </header>
+    <main>
+        <div id="cart">
+            <!-- <div class="item">
+                <div class="item-image">
+                    <img src="img/plant.png" style="width: 100%;">
+                </div>
+
+                <div class="item-info">
+                    <div class="table">
+                        <span class="caption"><strong>plant name</strong></span>
+                        <table>
+
+                            <tr>
+                                <th>Space:</th>
+                                <td>Garden</td>
+                            </tr>
+                            <tr>
+                                <th>Lighting:</th>
+                                <td>Strong</td>
+                            </tr>
+                            <tr>
+                                <th>Pets:</th>
+                                <td>Not safe</td>
+                            </tr>
+                            <tr>
+                                <th>Size:</th>
+                                <td>120cm</td>
+                            </tr>
+                            <tr>
+                                <th>Care level:</th>
+                                <td>Low</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="quantity">
+                    <label for="quantity">Quantity</label>
+                    <input type="number" class="quantity-input" name="quantity" value="1" min="1">
+                </div>
+
+                <div class="price">
+                    <span>20SR</span>
+                </div>
+
+                <div class="remove-btn">
+                    <button type="button" class="remove">Remove</button>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="item-image">
+                    <img src="img/plant.png" style="width: 100%;">
+                </div>
+                <div class="item-info">
+                    <div class="table">
+                        <span class="caption"><strong>plant name</strong></span>
+                        <table>
+
+                            <tr>
+                                <th>Space:</th>
+                                <td>Garden</td>
+                            </tr>
+                            <tr>
+                                <th>Lighting:</th>
+                                <td>Strong</td>
+                            </tr>
+                            <tr>
+                                <th>Pets:</th>
+                                <td>Not safe</td>
+                            </tr>
+                            <tr>
+                                <th>Size:</th>
+                                <td>120cm</td>
+                            </tr>
+                            <tr>
+                                <th>Care level:</th>
+                                <td>Low</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="quantity">
+                    <form action="">
+                        <label for="quantity">Quantity</label>
+                        <input type="number" class="quantity-input" name="quantity" value="1" min="1">
+                    </form>
+                </div>
+                <div class="price">
+                    <span>20SR</span>
+                </div>
+                <div class="remove-btn">
+                    <button type="button" class="remove">Remove</button>
+                </div>
+            </div> -->
+            <div class="total">
+                <strong>Total:</strong>
+                <span class="total-price"></span>
+            </div>
+        </div>
+        <div id="checkout-div">
+            <button id="checkout" onclick="payment()" class="btn button">Checkout</button>
+        </div>
+        <div id="payment-window">
+
+            <div class="payment-box">
+                <!-- close button -->
+
+
+                <div class="total total-payment">
+
+                    <span class="total-price" style="margin-top: 30%;"></span>
+                    <div id="test">
+                        <img src="img/payment2.png" style="width: 100%;">
+                        <img src="img/Payment-methods.png" style="width: 80%; margin-top:50%;">
+                    </div>
+                    <div id="payment-form">
+                        <form>
+                            <strong style="font-size: 3vw;">Payment</strong><br>
+                            <label class="form-label">
+                        Card: <input type="text" style="width: 20vw;">
+                        </label>
+                            <label class="form-label">
+                            Name on card: <input type="text" style="width: 20vw;">
+                        </label>
+                            <fieldset id="fieldset">
+                                <label>
+                                CVC: <input type="text" class="small-input">
+                                </label>
+                                <label>
+                                Expiry: <input type="text" class="small-input" placeholder="mm/yy">
+                             </label>
+                            </fieldset>
+                            <button type="submit" class="btn btn-proceed">Proceed</button>
+                        </form>
+                    </div>
+                    <span class="close close-btn" onclick="shutdown()">&times;</span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="footerparts">
+        <h3 style="font-size: 1.5vw !important;">Contact us</h3>
+        <h4 style="font-size: 1.2vw !important;">help@GreenGarden.com</h4>
+
+    </footer>
+    <script type="text/javascript">
+        var payment_page = document.getElementById('payment-window')
+
+        function payment() {
+            payment_page.style.display = "block";
+        }
+
+        function shutdown() {
+            payment_page.style.display = "none";
+        }
+    </script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   <script type="text/javascript" src="javascript/cart.js" async></script>
+   <script type="text/javascript" src="javascript/add-to-cart.js" async></script>
+
+
+</body>
+
+</html>
